@@ -1,7 +1,7 @@
 <?php
 // Konfigurasi database
 $host = 'localhost';
-$db   = 'db_uas_pbo_trpl1a_aylaazzura';
+$db   = 'db_uas_pbo_trpl1a_aylaazzurap';
 $user = 'root';      // Sesuaikan dengan username database Anda
 $pass = '';          // Sesuaikan dengan password database Anda (kosongkan jika default)
 $charset = 'utf8mb4';
