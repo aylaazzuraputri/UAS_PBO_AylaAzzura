@@ -5,7 +5,7 @@
  */
 
 $host = 'localhost';
-$db   = 'db_uas_pbo_trpl1a_aylaazzura';
+$db   = 'db_uas_pbo_trpl1a_aylaazzurap';
 $user = 'root';     // Sesuaikan jika Anda menggunakan user database lain
 $pass = '';         // Sesuaikan jika Anda menggunakan password
 $charset = 'utf8mb4';
