@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 26, 2026 at 02:17 AM
+-- Generation Time: Jun 26, 2026 at 02:42 AM
 -- Server version: 8.4.3
 -- PHP Version: 8.3.30
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_uas_pbo_trpl1a_ayla`
+-- Database: `db_uas_pbo_trpl1a_aylaazzura`
 --
 
 -- --------------------------------------------------------
@@ -40,7 +40,7 @@ CREATE TABLE `mahasiswa` (
   `dana_saku_subsidi` decimal(15,2) DEFAULT '0.00',
   `nama_instansi_beasiswa` varchar(100) DEFAULT NULL,
   `minimal_ipk_bersyarat` decimal(3,2) DEFAULT '0.00'
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `mahasiswa`
@@ -67,27 +67,6 @@ INSERT INTO `mahasiswa` (`id_mahasiswa`, `nim`, `nama_mahasiswa`, `semester`, `t
 (18, '2026018', 'Bagas Kaffa', 5, 0.00, 'prestasi', 'UKT-0', 'Warno', NULL, 600000.00, 'Tanoto Foundation', 3.25),
 (19, '2026019', 'Citra Kirana', 1, 0.00, 'prestasi', 'UKT-0', 'Hadi', NULL, 500000.00, 'Djarum Foundation', 3.50),
 (20, '2026020', 'Dimas Seto', 2, 0.00, 'prestasi', 'UKT-0', 'Roni', NULL, 800000.00, 'Tanoto Foundation', 3.25);
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `mahasiswa`
---
-ALTER TABLE `mahasiswa`
-  ADD PRIMARY KEY (`id_mahasiswa`),
-  ADD UNIQUE KEY `nim` (`nim`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `mahasiswa`
---
-ALTER TABLE `mahasiswa`
-  MODIFY `id_mahasiswa` int NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
