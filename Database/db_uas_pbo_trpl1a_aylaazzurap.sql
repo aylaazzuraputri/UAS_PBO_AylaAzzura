@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 26, 2026 at 02:42 AM
+-- Generation Time: Jun 26, 2026 at 02:46 AM
 -- Server version: 8.4.3
 -- PHP Version: 8.3.30
 
@@ -24,10 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mahasiswa`
+-- Table structure for table `tabel_mahasiswa`
 --
 
-CREATE TABLE `mahasiswa` (
+CREATE TABLE `tabel_mahasiswa` (
   `id_mahasiswa` int NOT NULL,
   `nim` varchar(20) NOT NULL,
   `nama_mahasiswa` varchar(100) NOT NULL,
@@ -43,10 +43,10 @@ CREATE TABLE `mahasiswa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `mahasiswa`
+-- Dumping data for table `tabel_mahasiswa`
 --
 
-INSERT INTO `mahasiswa` (`id_mahasiswa`, `nim`, `nama_mahasiswa`, `semester`, `tarif_ukt_nominal`, `jenis_pembiayaan`, `golongan_ukt`, `nama_wali`, `nomor_kip_kuliah`, `dana_saku_subsidi`, `nama_instansi_beasiswa`, `minimal_ipk_bersyarat`) VALUES
+INSERT INTO `tabel_mahasiswa` (`id_mahasiswa`, `nim`, `nama_mahasiswa`, `semester`, `tarif_ukt_nominal`, `jenis_pembiayaan`, `golongan_ukt`, `nama_wali`, `nomor_kip_kuliah`, `dana_saku_subsidi`, `nama_instansi_beasiswa`, `minimal_ipk_bersyarat`) VALUES
 (1, '2026001', 'Budi Santoso', 2, 5000000.00, 'mandiri', 'UKT-4', 'Sutrisno', NULL, 0.00, NULL, 0.00),
 (2, '2026002', 'Siti Aminah', 4, 7500000.00, 'mandiri', 'UKT-6', 'Ahmad Yani', NULL, 0.00, NULL, 0.00),
 (3, '2026003', 'Andi Wijaya', 6, 4000000.00, 'mandiri', 'UKT-3', 'Bambang', NULL, 0.00, NULL, 0.00),
